@@ -1,6 +1,6 @@
 # AI Statistics Lab: Pairs of Random Variables
 
-This lab is based on the topics covered up to joint PMF:
+This lab is based on the topics:
 - joint CDF
 - probability over rectangular regions
 - joint PDF
@@ -8,15 +8,6 @@ This lab is based on the topics covered up to joint PMF:
 - joint PMF
 - marginal PMFs
 - independence for discrete random variables
-
-The slides introduce:
-- joint CDF: F_XY(x, y) = P(X <= x, Y <= y)
-- rectangle probability using the joint CDF
-- joint PDF and marginals for continuous pairs
-- joint PMF and marginals for discrete pairs
-- independence test: P_XY(x, y) = P_X(x) P_Y(y)
-
-These ideas are developed in the uploaded slides up to page 26, including the unit-square example, the two-coin example, the two-dice example, and the counting-heads example. :contentReference[oaicite:1]{index=1}
 
 ---
 
@@ -44,7 +35,7 @@ f_XY(x, y) = 1,   0 < x < 1 and 0 < y < 1
 
 and the joint CDF is piecewise; in the interior of the unit square,
 
-F_XY(x, y) = xy,  0 < x < 1 and 0 < y < 1. :contentReference[oaicite:2]{index=2}
+F_XY(x, y) = xy,  0 < x < 1 and 0 < y < 1. 
 
 ### Tasks
 
@@ -56,7 +47,7 @@ Implement the following functions:
 2. `rectangle_probability(x1, x2, y1, y2)`
    - Compute P(x1 < X <= x2, y1 < Y <= y2)
    - Use the joint CDF rectangle formula:
-     F(x2, y2) - F(x1, y2) - F(x2, y1) + F(x1, y1) :contentReference[oaicite:3]{index=3}
+     F(x2, y2) - F(x1, y2) - F(x2, y1) + F(x1, y1) 
 
 3. `marginal_fx_unit_square(x)`
    - Return the marginal PDF f_X(x)
@@ -86,7 +77,6 @@ So the joint PMF is:
 x=0          1/4   1/4    0
 x=1           0    1/4   1/4
 
-This example is explicitly dependent in the slides. :contentReference[oaicite:4]{index=4}
 
 ### Tasks
 
@@ -114,17 +104,6 @@ Edit only:
 
 Do not modify the test file.
 
----
-
-## Suggested Time Plan
-
-- 20 min: review concepts from slides
-- 35 min: Question 1
-- 35 min: Question 2
-- 20 min: debugging and checking results
-- 10 min: submission
-
----
 
 ## Run Locally
 
